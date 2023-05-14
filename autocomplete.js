@@ -908,6 +908,7 @@ class Autocomplete {
       //@ts-ignore
       const input = document.getElementById(params.related);
       if (input) {
+        params[params.related] = input.value;
         params.related = input.value;
       }
     }
